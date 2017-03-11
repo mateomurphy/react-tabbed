@@ -40,6 +40,7 @@
     "deep-freeze": "^0.0.1",
     "jest": "^18.1.0",
     "rimraf": "^2.5.4",
-    "webpack": "2.2.0-rc.4"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
   }
 }
