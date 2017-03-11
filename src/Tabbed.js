@@ -1,6 +1,6 @@
 import React, { Component, Children, PropTypes } from 'react'
 
-export class Tabbed extends Component {
+export default class Tabbed extends Component {
   constructor(props) {
     super()
 

@@ -1,6 +1,6 @@
 import React, { Component, Children, PropTypes } from 'react'
 
-export function Pane({id, children}, {activeTab}) {
+export default function Pane({id, children}, {activeTab}) {
   if (id === activeTab) {
     return Children.only(children)
   } else {

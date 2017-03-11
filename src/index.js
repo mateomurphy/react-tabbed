@@ -1,3 +1,4 @@
-export * from './Tabbed'
-export * from './Tab'
-export * from './Pane'
+export { default as Tabbed } from './Tabbed'
+export { default as Tab } from './Tab'
+export { default as Pane } from './Pane'
+export { default as select } from './select'

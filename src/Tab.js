@@ -1,18 +1,14 @@
 import React, { Component, Children, PropTypes } from 'react'
 
-export function Tab(props, {activeTab, changeTab}) {
+import select from './select'
+
+function Tab(props) {
   const onClick = (e) => {
     e.preventDefault()
-    changeTab(props.for)
+    props.changeTab()
   }
 
-  let active = props.for === activeTab
-
-  if (props.render) {
-    return(props.render({active, changeTab: () => changeTab(props.for) }))
-  }
-
-  let className = active ? 'active' : null
+  let className = props.active ? 'active' : null
 
   return(
     <li key={props.for} role="tab" className='nav-item'>
@@ -23,12 +19,4 @@ export function Tab(props, {activeTab, changeTab}) {
   )
 }
 
-Tab.propTypes = {
-  for: PropTypes.string.isRequired,
-  render: PropTypes.func
-}
-
-Tab.contextTypes = {
-  activeTab: PropTypes.string,
-  changeTab: PropTypes.func
-}
+export default select(Tab)
