@@ -1,10 +1,10 @@
 import React, { Component, Children, PropTypes } from 'react'
 
-export default class Tabbed extends Component {
+export class Tabbed extends Component {
   constructor(props) {
     super()
 
-    let activeTab = props.default
+    let activeTab = props.defaultValue
 
     if (props.useHash && window.location.hash !== '') {
       activeTab = window.location.hash.slice(1)
