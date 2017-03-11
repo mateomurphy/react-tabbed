@@ -1,6 +1,6 @@
 {
   "name": "react-tabbed",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "repository": "https://github.com/mateomurphy/react-tabbed",
   "author": "Mateo Murphy <mateo.murphy@gmail.com>",
