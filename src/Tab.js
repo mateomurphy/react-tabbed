@@ -15,8 +15,8 @@ export function Tab(props, {activeTab, changeTab}) {
   let className = active ? 'active' : null
 
   return(
-    <li key={props.for} role="tab" className={className}>
-      <a href={`#${props.for}`} onClick={e => onClick(e)}>
+    <li key={props.for} role="tab" className='nav-item'>
+      <a href={`#${props.for}`} className={'nav-link ' + className} onClick={e => onClick(e)}>
         {props.children}
       </a>
     </li>
