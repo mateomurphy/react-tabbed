@@ -1,6 +1,8 @@
 {
   "name": "react-tabbed",
-  "version": "0.1.0",
+  "descrtipion": "Flexible, markup agnostic tab component for React",
+  "version": "0.1.1",
+  "keywords": ["react", "tab", "tabs"],
   "main": "lib/index.js",
   "repository": "https://github.com/mateomurphy/react-tabbed",
   "author": "Mateo Murphy <mateo.murphy@gmail.com>",
